@@ -17,13 +17,8 @@ add-zsh-hook precmd update_vars
 
 if ! typeset -f prompt_dir_backup >/dev/null; then
     if typeset -f prompt_dir > /dev/null; then
-        functions[prompt_dir_backup]=$functions[prompt_dir]
-        function prompt_dir() {
-            if [ "$BAZEL_IN_REPO" = "0" ]; then
-                return 0
-            fi
-            prompt_dir_backup
-        }
+	skip_prefix='if [ "$BAZEL_IN_REPO" = "0" ]; then return 0; fi; '
+        functions[prompt_dir]="$skip_prefix $functions[prompt_dir]"
     fi
 fi
 
