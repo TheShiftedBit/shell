@@ -1,0 +1,11 @@
+{
+  "segments": [
+    "git",
+    "hg",
+    "~/.config/powerline-shell/bazel_segment.py",
+    "cwd"
+  ],
+  "vcs": {
+    "show_symbol": false
+  }
+}
