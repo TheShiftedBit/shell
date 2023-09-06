@@ -18,3 +18,5 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 
 mkdir -p ~/.config/powerline-shell
 ln -s "$DIR/powerline-shell" ~/.config/powerline-shell
+
+ln -s "$DIR/zshrc" ~/.zshrc
