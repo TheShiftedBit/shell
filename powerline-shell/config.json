@@ -3,6 +3,7 @@
     "git",
     "hg",
     "~/.config/powerline-shell/bazel_segment.py",
+    "~/.config/powerline-shell/troll_segment.py",
     "cwd"
   ],
   "vcs": {

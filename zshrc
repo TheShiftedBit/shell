@@ -1,9 +1,14 @@
+export PATH="$HOME/bin:$PATH"
+source ~/.env
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
+
+source "$HOME/shell/ssh_username.zsh"
 
 function colorwheel {
 	for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done
@@ -124,10 +129,12 @@ fi
 
 export TSAN_OPTIONS=report_atomic_races=0
 
-export PATH="$PATH:"/home/ipudney/teclada/setup/../bins/bins_self_link_sentinel
+export PATH="$HOME/ianrepos/doorserve/bins:$PATH"
 export PATH="$PATH:/home/ipudney/bins"
 
 function colorwheel() {
 	for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done
 }
-POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
+POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=false
+
+

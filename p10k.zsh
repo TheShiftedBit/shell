@@ -19,6 +19,7 @@
 [[ ! -o 'no_brace_expand' ]] || p10k_config_opts+=('no_brace_expand')
 'builtin' 'setopt' 'no_aliases' 'no_sh_glob' 'brace_expand'
 
+source ~/shell/troll_segment.zsh
 source ~/bazel_magic.zsh
 
 () {
@@ -33,6 +34,7 @@ source ~/bazel_magic.zsh
 
   # The list of segments shown on the left. Fill it with the most important segments.
   typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
+    ssh_identity
     vcs                     # git status
     # os_icon               # os identifier
     dir
