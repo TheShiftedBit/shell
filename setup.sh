@@ -20,3 +20,6 @@ mkdir -p ~/.config/powerline-shell
 ln -s "$DIR/powerline-shell" ~/.config/powerline-shell
 
 ln -s "$DIR/zshrc" ~/.zshrc
+
+
+

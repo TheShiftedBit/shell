@@ -30,3 +30,6 @@ gh extension install github/gh-copilot
 
 echo "Example command explanation"
 gh copilot explain "brew install bazel"
+
+ln -s "$DIR/copilot_hook.zsh" ~/copilot_hook.zsh
+
