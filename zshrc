@@ -136,3 +136,6 @@ function colorwheel() {
 POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
 
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
+if type "gh" > /dev/null; then
+	eval "$(gh copilot alias -- zsh)"
+fi
