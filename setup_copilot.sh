@@ -24,6 +24,7 @@ else
 fi
 
 "$BREW" install gh
+"$BREW" install jq
 
 gh auth login
 gh extension install github/gh-copilot
