@@ -1,5 +1,5 @@
 export PATH="$PATH:$HOME/bin"
-export PATH="$(brew --prefix)/bin:$(brew --prefix)/opt/python@3.11/libexec/bin:$PATH"
+export PATH="/opt/homebrew/bin:$(brew --prefix)/opt/python@3.11/libexec/bin:$PATH"
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -140,3 +140,7 @@ if type "gh" > /dev/null; then
 	eval "$(gh copilot alias -- zsh)"
 	source ~/copilot_hook.zsh
 fi
+
+source ~/shell/iterm2_shell_integration.zsh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

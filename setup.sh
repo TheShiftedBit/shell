@@ -22,4 +22,5 @@ ln -s "$DIR/powerline-shell" ~/.config/powerline-shell
 ln -s "$DIR/zshrc" ~/.zshrc
 
 
-
+git clone --depth 1 https://github.com/junegunn/fzf.git "$DIR/fzf"
+"$DIR/fzf/install"
